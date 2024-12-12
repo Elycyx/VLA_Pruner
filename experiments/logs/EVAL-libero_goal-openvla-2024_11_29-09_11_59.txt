@@ -1,0 +1,3521 @@
+Task suite: libero_goal
+
+Task: open the middle drawer of the cabinet
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=1--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 1
+# successes: 0 (0.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=2--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 2
+# successes: 0 (0.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=3--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 1 (33.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=4--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 4
+# successes: 1 (25.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=5--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 2 (40.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=6--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 6
+# successes: 2 (33.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=7--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 7
+# successes: 2 (28.6%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=8--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 8
+# successes: 2 (25.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=9--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 3 (33.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=10--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 10
+# successes: 3 (30.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=11--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 11
+# successes: 4 (36.4%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=12--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 12
+# successes: 4 (33.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=13--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 13
+# successes: 5 (38.5%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=14--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 14
+# successes: 6 (42.9%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=15--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 15
+# successes: 7 (46.7%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=16--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 16
+# successes: 8 (50.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=17--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 17
+# successes: 9 (52.9%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=18--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 18
+# successes: 9 (50.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=19--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 19
+# successes: 10 (52.6%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=20--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 20
+# successes: 11 (55.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=21--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 21
+# successes: 11 (52.4%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=22--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 22
+# successes: 12 (54.5%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=23--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 13 (56.5%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=24--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 24
+# successes: 14 (58.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=25--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 25
+# successes: 15 (60.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=26--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 26
+# successes: 16 (61.5%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=27--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 27
+# successes: 16 (59.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=28--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 28
+# successes: 17 (60.7%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=29--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 29
+# successes: 18 (62.1%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=30--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 30
+# successes: 18 (60.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=31--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 19 (61.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=32--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 32
+# successes: 19 (59.4%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=33--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 20 (60.6%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=34--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 34
+# successes: 20 (58.8%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=35--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 35
+# successes: 20 (57.1%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=36--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 36
+# successes: 21 (58.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=37--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 37
+# successes: 21 (56.8%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=38--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 38
+# successes: 21 (55.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=39--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 39
+# successes: 21 (53.8%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=40--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 22 (55.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=41--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 41
+# successes: 22 (53.7%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=42--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 42
+# successes: 23 (54.8%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=43--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 43
+# successes: 24 (55.8%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=44--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 44
+# successes: 24 (54.5%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=45--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 45
+# successes: 24 (53.3%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=46--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 46
+# successes: 24 (52.2%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=47--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 47
+# successes: 24 (51.1%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=48--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 48
+# successes: 25 (52.1%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=49--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 49
+# successes: 26 (53.1%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=50--success=True--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 50
+# successes: 27 (54.0%)
+Current task success rate: 0.54
+Current total success rate: 0.54
+
+Task: put the bowl on the stove
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=51--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 51
+# successes: 28 (54.9%)
+
+Task: put the bowl on the stove
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=52--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 52
+# successes: 29 (55.8%)
+
+Task: put the bowl on the stove
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=53--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 53
+# successes: 30 (56.6%)
+
+Task: put the bowl on the stove
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=54--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 54
+# successes: 31 (57.4%)
+
+Task: put the bowl on the stove
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=55--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 55
+# successes: 32 (58.2%)
+
+Task: put the bowl on the stove
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=56--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 56
+# successes: 33 (58.9%)
+
+Task: put the bowl on the stove
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=57--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 57
+# successes: 34 (59.6%)
+
+Task: put the bowl on the stove
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=58--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 58
+# successes: 35 (60.3%)
+
+Task: put the bowl on the stove
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=59--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 59
+# successes: 36 (61.0%)
+
+Task: put the bowl on the stove
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=60--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 60
+# successes: 37 (61.7%)
+
+Task: put the bowl on the stove
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=61--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 61
+# successes: 38 (62.3%)
+
+Task: put the bowl on the stove
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=62--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 62
+# successes: 39 (62.9%)
+
+Task: put the bowl on the stove
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=63--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 63
+# successes: 39 (61.9%)
+
+Task: put the bowl on the stove
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=64--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 64
+# successes: 40 (62.5%)
+
+Task: put the bowl on the stove
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=65--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 65
+# successes: 41 (63.1%)
+
+Task: put the bowl on the stove
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=66--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 66
+# successes: 42 (63.6%)
+
+Task: put the bowl on the stove
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=67--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 67
+# successes: 43 (64.2%)
+
+Task: put the bowl on the stove
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=68--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 68
+# successes: 44 (64.7%)
+
+Task: put the bowl on the stove
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=69--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 69
+# successes: 45 (65.2%)
+
+Task: put the bowl on the stove
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=70--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 70
+# successes: 46 (65.7%)
+
+Task: put the bowl on the stove
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=71--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 71
+# successes: 47 (66.2%)
+
+Task: put the bowl on the stove
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=72--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 72
+# successes: 48 (66.7%)
+
+Task: put the bowl on the stove
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=73--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 73
+# successes: 49 (67.1%)
+
+Task: put the bowl on the stove
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=74--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 74
+# successes: 50 (67.6%)
+
+Task: put the bowl on the stove
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=75--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 75
+# successes: 51 (68.0%)
+
+Task: put the bowl on the stove
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=76--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 76
+# successes: 52 (68.4%)
+
+Task: put the bowl on the stove
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=77--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 77
+# successes: 53 (68.8%)
+
+Task: put the bowl on the stove
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=78--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 78
+# successes: 54 (69.2%)
+
+Task: put the bowl on the stove
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=79--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 79
+# successes: 55 (69.6%)
+
+Task: put the bowl on the stove
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=80--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 80
+# successes: 56 (70.0%)
+
+Task: put the bowl on the stove
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=81--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 81
+# successes: 57 (70.4%)
+
+Task: put the bowl on the stove
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=82--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 82
+# successes: 58 (70.7%)
+
+Task: put the bowl on the stove
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=83--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 83
+# successes: 58 (69.9%)
+
+Task: put the bowl on the stove
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=84--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 84
+# successes: 59 (70.2%)
+
+Task: put the bowl on the stove
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=85--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 85
+# successes: 59 (69.4%)
+
+Task: put the bowl on the stove
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=86--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 86
+# successes: 59 (68.6%)
+
+Task: put the bowl on the stove
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=87--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 87
+# successes: 60 (69.0%)
+
+Task: put the bowl on the stove
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=88--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 88
+# successes: 61 (69.3%)
+
+Task: put the bowl on the stove
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=89--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 89
+# successes: 62 (69.7%)
+
+Task: put the bowl on the stove
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=90--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 90
+# successes: 62 (68.9%)
+
+Task: put the bowl on the stove
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=91--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 91
+# successes: 62 (68.1%)
+
+Task: put the bowl on the stove
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=92--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 92
+# successes: 63 (68.5%)
+
+Task: put the bowl on the stove
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=93--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 93
+# successes: 64 (68.8%)
+
+Task: put the bowl on the stove
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=94--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 94
+# successes: 64 (68.1%)
+
+Task: put the bowl on the stove
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=95--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 95
+# successes: 65 (68.4%)
+
+Task: put the bowl on the stove
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=96--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 96
+# successes: 66 (68.8%)
+
+Task: put the bowl on the stove
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=97--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 97
+# successes: 67 (69.1%)
+
+Task: put the bowl on the stove
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=98--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 98
+# successes: 68 (69.4%)
+
+Task: put the bowl on the stove
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=99--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 99
+# successes: 69 (69.7%)
+
+Task: put the bowl on the stove
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=100--success=True--task=put_the_bowl_on_the_stove.mp4
+Success: True
+# episodes completed so far: 100
+# successes: 70 (70.0%)
+Current task success rate: 0.86
+Current total success rate: 0.7
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=101--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 101
+# successes: 71 (70.3%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=102--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 102
+# successes: 72 (70.6%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=103--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 103
+# successes: 73 (70.9%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=104--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 104
+# successes: 74 (71.2%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=105--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 105
+# successes: 75 (71.4%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=106--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 106
+# successes: 76 (71.7%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=107--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 107
+# successes: 77 (72.0%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=108--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 108
+# successes: 78 (72.2%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=109--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 109
+# successes: 78 (71.6%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=110--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 110
+# successes: 79 (71.8%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=111--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 111
+# successes: 80 (72.1%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=112--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 112
+# successes: 81 (72.3%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=113--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 113
+# successes: 82 (72.6%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=114--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 114
+# successes: 83 (72.8%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=115--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 115
+# successes: 84 (73.0%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=116--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 116
+# successes: 85 (73.3%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=117--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 117
+# successes: 86 (73.5%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=118--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 118
+# successes: 87 (73.7%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=119--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 119
+# successes: 88 (73.9%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=120--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 120
+# successes: 89 (74.2%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=121--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 121
+# successes: 90 (74.4%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=122--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 122
+# successes: 91 (74.6%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=123--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 123
+# successes: 91 (74.0%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=124--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 124
+# successes: 91 (73.4%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=125--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 125
+# successes: 92 (73.6%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=126--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 126
+# successes: 92 (73.0%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=127--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 127
+# successes: 93 (73.2%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=128--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 128
+# successes: 94 (73.4%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=129--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 129
+# successes: 94 (72.9%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=130--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 130
+# successes: 95 (73.1%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=131--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 131
+# successes: 96 (73.3%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=132--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 132
+# successes: 97 (73.5%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=133--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 133
+# successes: 98 (73.7%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=134--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 134
+# successes: 99 (73.9%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=135--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 135
+# successes: 99 (73.3%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=136--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 136
+# successes: 100 (73.5%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=137--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 137
+# successes: 101 (73.7%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=138--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 138
+# successes: 102 (73.9%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=139--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 139
+# successes: 103 (74.1%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=140--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 140
+# successes: 103 (73.6%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=141--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 141
+# successes: 104 (73.8%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=142--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 142
+# successes: 105 (73.9%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=143--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 143
+# successes: 106 (74.1%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=144--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 144
+# successes: 107 (74.3%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=145--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 145
+# successes: 108 (74.5%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=146--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 146
+# successes: 109 (74.7%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=147--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 147
+# successes: 110 (74.8%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=148--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 148
+# successes: 111 (75.0%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=149--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 149
+# successes: 112 (75.2%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=150--success=True--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 150
+# successes: 113 (75.3%)
+Current task success rate: 0.86
+Current total success rate: 0.7533333333333333
+
+Task: open the top drawer and put the bowl inside
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=151--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 151
+# successes: 114 (75.5%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=152--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 152
+# successes: 114 (75.0%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=153--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 153
+# successes: 115 (75.2%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=154--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 154
+# successes: 116 (75.3%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=155--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 155
+# successes: 116 (74.8%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=156--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 156
+# successes: 117 (75.0%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=157--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 157
+# successes: 117 (74.5%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=158--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 158
+# successes: 117 (74.1%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=159--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 159
+# successes: 117 (73.6%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=160--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 160
+# successes: 117 (73.1%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=161--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 161
+# successes: 118 (73.3%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=162--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 162
+# successes: 119 (73.5%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=163--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 163
+# successes: 120 (73.6%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=164--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 164
+# successes: 121 (73.8%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=165--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 165
+# successes: 122 (73.9%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=166--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 166
+# successes: 123 (74.1%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=167--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 167
+# successes: 124 (74.3%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=168--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 168
+# successes: 124 (73.8%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=169--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 169
+# successes: 124 (73.4%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=170--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 170
+# successes: 125 (73.5%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=171--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 171
+# successes: 125 (73.1%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=172--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 172
+# successes: 126 (73.3%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=173--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 173
+# successes: 126 (72.8%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=174--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 174
+# successes: 127 (73.0%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=175--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 175
+# successes: 128 (73.1%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=176--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 176
+# successes: 128 (72.7%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=177--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 177
+# successes: 129 (72.9%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=178--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 178
+# successes: 129 (72.5%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=179--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 179
+# successes: 129 (72.1%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=180--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 180
+# successes: 129 (71.7%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=181--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 181
+# successes: 130 (71.8%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=182--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 182
+# successes: 131 (72.0%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=183--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 183
+# successes: 132 (72.1%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=184--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 184
+# successes: 133 (72.3%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=185--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 185
+# successes: 133 (71.9%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=186--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 186
+# successes: 134 (72.0%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=187--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 187
+# successes: 135 (72.2%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=188--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 188
+# successes: 135 (71.8%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=189--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 189
+# successes: 135 (71.4%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=190--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 190
+# successes: 136 (71.6%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=191--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 191
+# successes: 136 (71.2%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=192--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 192
+# successes: 136 (70.8%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=193--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 193
+# successes: 137 (71.0%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=194--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 194
+# successes: 138 (71.1%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=195--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 195
+# successes: 138 (70.8%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=196--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 196
+# successes: 139 (70.9%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=197--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 197
+# successes: 139 (70.6%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=198--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 198
+# successes: 140 (70.7%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=199--success=True--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: True
+# episodes completed so far: 199
+# successes: 141 (70.9%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=200--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 200
+# successes: 141 (70.5%)
+Current task success rate: 0.56
+Current total success rate: 0.705
+
+Task: put the bowl on top of the cabinet
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=201--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 201
+# successes: 142 (70.6%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=202--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 202
+# successes: 143 (70.8%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=203--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 203
+# successes: 144 (70.9%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=204--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 204
+# successes: 145 (71.1%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=205--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 205
+# successes: 146 (71.2%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=206--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 206
+# successes: 147 (71.4%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=207--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 207
+# successes: 148 (71.5%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=208--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 208
+# successes: 149 (71.6%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=209--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 209
+# successes: 150 (71.8%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=210--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 210
+# successes: 151 (71.9%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=211--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 211
+# successes: 152 (72.0%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=212--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 212
+# successes: 153 (72.2%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=213--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 213
+# successes: 154 (72.3%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=214--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 214
+# successes: 155 (72.4%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=215--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 215
+# successes: 156 (72.6%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=216--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 216
+# successes: 157 (72.7%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=217--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 217
+# successes: 158 (72.8%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=218--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 218
+# successes: 159 (72.9%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=219--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 219
+# successes: 160 (73.1%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=220--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 220
+# successes: 161 (73.2%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=221--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 221
+# successes: 162 (73.3%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=222--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 222
+# successes: 163 (73.4%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=223--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 223
+# successes: 164 (73.5%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=224--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 224
+# successes: 164 (73.2%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=225--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 225
+# successes: 165 (73.3%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=226--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 226
+# successes: 166 (73.5%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=227--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 227
+# successes: 167 (73.6%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=228--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 228
+# successes: 167 (73.2%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=229--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 229
+# successes: 167 (72.9%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=230--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 230
+# successes: 168 (73.0%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=231--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 231
+# successes: 168 (72.7%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=232--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 232
+# successes: 169 (72.8%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=233--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 233
+# successes: 170 (73.0%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=234--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 234
+# successes: 171 (73.1%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=235--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 235
+# successes: 172 (73.2%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=236--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 236
+# successes: 172 (72.9%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=237--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 237
+# successes: 173 (73.0%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=238--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 238
+# successes: 174 (73.1%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=239--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 239
+# successes: 174 (72.8%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=240--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 240
+# successes: 175 (72.9%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=241--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 241
+# successes: 175 (72.6%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=242--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 242
+# successes: 176 (72.7%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=243--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 243
+# successes: 177 (72.8%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=244--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 244
+# successes: 178 (73.0%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=245--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 245
+# successes: 179 (73.1%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=246--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 246
+# successes: 180 (73.2%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=247--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 247
+# successes: 181 (73.3%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=248--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 248
+# successes: 181 (73.0%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=249--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 249
+# successes: 182 (73.1%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=250--success=True--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 250
+# successes: 183 (73.2%)
+Current task success rate: 0.84
+Current total success rate: 0.732
+
+Task: push the plate to the front of the stove
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=251--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 251
+# successes: 184 (73.3%)
+
+Task: push the plate to the front of the stove
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=252--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 252
+# successes: 185 (73.4%)
+
+Task: push the plate to the front of the stove
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=253--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 253
+# successes: 185 (73.1%)
+
+Task: push the plate to the front of the stove
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=254--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 254
+# successes: 186 (73.2%)
+
+Task: push the plate to the front of the stove
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=255--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 255
+# successes: 187 (73.3%)
+
+Task: push the plate to the front of the stove
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=256--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 256
+# successes: 188 (73.4%)
+
+Task: push the plate to the front of the stove
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=257--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 257
+# successes: 189 (73.5%)
+
+Task: push the plate to the front of the stove
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=258--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 258
+# successes: 189 (73.3%)
+
+Task: push the plate to the front of the stove
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=259--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 259
+# successes: 189 (73.0%)
+
+Task: push the plate to the front of the stove
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=260--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 260
+# successes: 190 (73.1%)
+
+Task: push the plate to the front of the stove
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=261--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 261
+# successes: 191 (73.2%)
+
+Task: push the plate to the front of the stove
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=262--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 262
+# successes: 192 (73.3%)
+
+Task: push the plate to the front of the stove
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=263--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 263
+# successes: 193 (73.4%)
+
+Task: push the plate to the front of the stove
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=264--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 264
+# successes: 194 (73.5%)
+
+Task: push the plate to the front of the stove
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=265--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 265
+# successes: 195 (73.6%)
+
+Task: push the plate to the front of the stove
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=266--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 266
+# successes: 196 (73.7%)
+
+Task: push the plate to the front of the stove
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=267--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 267
+# successes: 197 (73.8%)
+
+Task: push the plate to the front of the stove
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=268--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 268
+# successes: 198 (73.9%)
+
+Task: push the plate to the front of the stove
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=269--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 269
+# successes: 199 (74.0%)
+
+Task: push the plate to the front of the stove
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=270--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 270
+# successes: 200 (74.1%)
+
+Task: push the plate to the front of the stove
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=271--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 271
+# successes: 201 (74.2%)
+
+Task: push the plate to the front of the stove
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=272--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 272
+# successes: 202 (74.3%)
+
+Task: push the plate to the front of the stove
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=273--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 273
+# successes: 203 (74.4%)
+
+Task: push the plate to the front of the stove
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=274--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 274
+# successes: 204 (74.5%)
+
+Task: push the plate to the front of the stove
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=275--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 275
+# successes: 205 (74.5%)
+
+Task: push the plate to the front of the stove
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=276--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 276
+# successes: 206 (74.6%)
+
+Task: push the plate to the front of the stove
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=277--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 277
+# successes: 207 (74.7%)
+
+Task: push the plate to the front of the stove
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=278--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 278
+# successes: 208 (74.8%)
+
+Task: push the plate to the front of the stove
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=279--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 279
+# successes: 208 (74.6%)
+
+Task: push the plate to the front of the stove
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=280--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 280
+# successes: 209 (74.6%)
+
+Task: push the plate to the front of the stove
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=281--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 281
+# successes: 209 (74.4%)
+
+Task: push the plate to the front of the stove
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=282--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 282
+# successes: 210 (74.5%)
+
+Task: push the plate to the front of the stove
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=283--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 283
+# successes: 210 (74.2%)
+
+Task: push the plate to the front of the stove
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=284--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 284
+# successes: 211 (74.3%)
+
+Task: push the plate to the front of the stove
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=285--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 285
+# successes: 212 (74.4%)
+
+Task: push the plate to the front of the stove
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=286--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 286
+# successes: 212 (74.1%)
+
+Task: push the plate to the front of the stove
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=287--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 287
+# successes: 213 (74.2%)
+
+Task: push the plate to the front of the stove
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=288--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 288
+# successes: 214 (74.3%)
+
+Task: push the plate to the front of the stove
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=289--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 289
+# successes: 215 (74.4%)
+
+Task: push the plate to the front of the stove
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=290--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 290
+# successes: 216 (74.5%)
+
+Task: push the plate to the front of the stove
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=291--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 291
+# successes: 217 (74.6%)
+
+Task: push the plate to the front of the stove
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=292--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 292
+# successes: 218 (74.7%)
+
+Task: push the plate to the front of the stove
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=293--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 293
+# successes: 219 (74.7%)
+
+Task: push the plate to the front of the stove
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=294--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 294
+# successes: 219 (74.5%)
+
+Task: push the plate to the front of the stove
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=295--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 295
+# successes: 219 (74.2%)
+
+Task: push the plate to the front of the stove
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=296--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 296
+# successes: 220 (74.3%)
+
+Task: push the plate to the front of the stove
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=297--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 297
+# successes: 221 (74.4%)
+
+Task: push the plate to the front of the stove
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=298--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 298
+# successes: 222 (74.5%)
+
+Task: push the plate to the front of the stove
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=299--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 299
+# successes: 222 (74.2%)
+
+Task: push the plate to the front of the stove
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=300--success=True--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: True
+# episodes completed so far: 300
+# successes: 223 (74.3%)
+Current task success rate: 0.8
+Current total success rate: 0.7433333333333333
+
+Task: put the cream cheese in the bowl
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=301--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 301
+# successes: 223 (74.1%)
+
+Task: put the cream cheese in the bowl
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=302--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 302
+# successes: 224 (74.2%)
+
+Task: put the cream cheese in the bowl
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=303--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 303
+# successes: 224 (73.9%)
+
+Task: put the cream cheese in the bowl
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=304--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 304
+# successes: 225 (74.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=305--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 305
+# successes: 225 (73.8%)
+
+Task: put the cream cheese in the bowl
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=306--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 306
+# successes: 225 (73.5%)
+
+Task: put the cream cheese in the bowl
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=307--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 307
+# successes: 226 (73.6%)
+
+Task: put the cream cheese in the bowl
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=308--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 308
+# successes: 227 (73.7%)
+
+Task: put the cream cheese in the bowl
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=309--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 309
+# successes: 228 (73.8%)
+
+Task: put the cream cheese in the bowl
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=310--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 310
+# successes: 229 (73.9%)
+
+Task: put the cream cheese in the bowl
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=311--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 311
+# successes: 230 (74.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=312--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 312
+# successes: 231 (74.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=313--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 313
+# successes: 232 (74.1%)
+
+Task: put the cream cheese in the bowl
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=314--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 314
+# successes: 233 (74.2%)
+
+Task: put the cream cheese in the bowl
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=315--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 315
+# successes: 234 (74.3%)
+
+Task: put the cream cheese in the bowl
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=316--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 316
+# successes: 235 (74.4%)
+
+Task: put the cream cheese in the bowl
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=317--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 317
+# successes: 235 (74.1%)
+
+Task: put the cream cheese in the bowl
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=318--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 318
+# successes: 235 (73.9%)
+
+Task: put the cream cheese in the bowl
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=319--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 319
+# successes: 236 (74.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=320--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 320
+# successes: 236 (73.8%)
+
+Task: put the cream cheese in the bowl
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=321--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 321
+# successes: 237 (73.8%)
+
+Task: put the cream cheese in the bowl
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=322--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 322
+# successes: 238 (73.9%)
+
+Task: put the cream cheese in the bowl
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=323--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 323
+# successes: 239 (74.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=324--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 324
+# successes: 239 (73.8%)
+
+Task: put the cream cheese in the bowl
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=325--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 325
+# successes: 240 (73.8%)
+
+Task: put the cream cheese in the bowl
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=326--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 326
+# successes: 241 (73.9%)
+
+Task: put the cream cheese in the bowl
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=327--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 327
+# successes: 242 (74.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=328--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 328
+# successes: 243 (74.1%)
+
+Task: put the cream cheese in the bowl
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=329--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 329
+# successes: 244 (74.2%)
+
+Task: put the cream cheese in the bowl
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=330--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 330
+# successes: 244 (73.9%)
+
+Task: put the cream cheese in the bowl
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=331--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 331
+# successes: 244 (73.7%)
+
+Task: put the cream cheese in the bowl
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=332--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 332
+# successes: 245 (73.8%)
+
+Task: put the cream cheese in the bowl
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=333--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 333
+# successes: 246 (73.9%)
+
+Task: put the cream cheese in the bowl
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=334--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 334
+# successes: 247 (74.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=335--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 335
+# successes: 248 (74.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=336--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 336
+# successes: 249 (74.1%)
+
+Task: put the cream cheese in the bowl
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=337--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 337
+# successes: 250 (74.2%)
+
+Task: put the cream cheese in the bowl
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=338--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 338
+# successes: 251 (74.3%)
+
+Task: put the cream cheese in the bowl
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=339--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 339
+# successes: 252 (74.3%)
+
+Task: put the cream cheese in the bowl
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=340--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 340
+# successes: 252 (74.1%)
+
+Task: put the cream cheese in the bowl
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=341--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 341
+# successes: 253 (74.2%)
+
+Task: put the cream cheese in the bowl
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=342--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 342
+# successes: 254 (74.3%)
+
+Task: put the cream cheese in the bowl
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=343--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 343
+# successes: 255 (74.3%)
+
+Task: put the cream cheese in the bowl
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=344--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 344
+# successes: 256 (74.4%)
+
+Task: put the cream cheese in the bowl
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=345--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 345
+# successes: 257 (74.5%)
+
+Task: put the cream cheese in the bowl
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=346--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 346
+# successes: 258 (74.6%)
+
+Task: put the cream cheese in the bowl
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=347--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 347
+# successes: 259 (74.6%)
+
+Task: put the cream cheese in the bowl
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=348--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 348
+# successes: 260 (74.7%)
+
+Task: put the cream cheese in the bowl
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=349--success=True--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: True
+# episodes completed so far: 349
+# successes: 261 (74.8%)
+
+Task: put the cream cheese in the bowl
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=350--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 350
+# successes: 261 (74.6%)
+Current task success rate: 0.76
+Current total success rate: 0.7457142857142857
+
+Task: turn on the stove
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=351--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 351
+# successes: 262 (74.6%)
+
+Task: turn on the stove
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=352--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 352
+# successes: 263 (74.7%)
+
+Task: turn on the stove
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=353--success=False--task=turn_on_the_stove.mp4
+Success: False
+# episodes completed so far: 353
+# successes: 263 (74.5%)
+
+Task: turn on the stove
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=354--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 354
+# successes: 264 (74.6%)
+
+Task: turn on the stove
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=355--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 355
+# successes: 265 (74.6%)
+
+Task: turn on the stove
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=356--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 356
+# successes: 266 (74.7%)
+
+Task: turn on the stove
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=357--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 357
+# successes: 267 (74.8%)
+
+Task: turn on the stove
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=358--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 358
+# successes: 268 (74.9%)
+
+Task: turn on the stove
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=359--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 359
+# successes: 269 (74.9%)
+
+Task: turn on the stove
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=360--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 360
+# successes: 270 (75.0%)
+
+Task: turn on the stove
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=361--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 361
+# successes: 271 (75.1%)
+
+Task: turn on the stove
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=362--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 362
+# successes: 272 (75.1%)
+
+Task: turn on the stove
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=363--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 363
+# successes: 273 (75.2%)
+
+Task: turn on the stove
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=364--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 364
+# successes: 274 (75.3%)
+
+Task: turn on the stove
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=365--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 365
+# successes: 275 (75.3%)
+
+Task: turn on the stove
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=366--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 366
+# successes: 276 (75.4%)
+
+Task: turn on the stove
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=367--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 367
+# successes: 277 (75.5%)
+
+Task: turn on the stove
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=368--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 368
+# successes: 278 (75.5%)
+
+Task: turn on the stove
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=369--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 369
+# successes: 279 (75.6%)
+
+Task: turn on the stove
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=370--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 370
+# successes: 280 (75.7%)
+
+Task: turn on the stove
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=371--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 371
+# successes: 281 (75.7%)
+
+Task: turn on the stove
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=372--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 372
+# successes: 282 (75.8%)
+
+Task: turn on the stove
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=373--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 373
+# successes: 283 (75.9%)
+
+Task: turn on the stove
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=374--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 374
+# successes: 284 (75.9%)
+
+Task: turn on the stove
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=375--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 375
+# successes: 285 (76.0%)
+
+Task: turn on the stove
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=376--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 376
+# successes: 286 (76.1%)
+
+Task: turn on the stove
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=377--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 377
+# successes: 287 (76.1%)
+
+Task: turn on the stove
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=378--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 378
+# successes: 288 (76.2%)
+
+Task: turn on the stove
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=379--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 379
+# successes: 289 (76.3%)
+
+Task: turn on the stove
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=380--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 380
+# successes: 290 (76.3%)
+
+Task: turn on the stove
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=381--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 381
+# successes: 291 (76.4%)
+
+Task: turn on the stove
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=382--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 382
+# successes: 292 (76.4%)
+
+Task: turn on the stove
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=383--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 383
+# successes: 293 (76.5%)
+
+Task: turn on the stove
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=384--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 384
+# successes: 294 (76.6%)
+
+Task: turn on the stove
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=385--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 385
+# successes: 295 (76.6%)
+
+Task: turn on the stove
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=386--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 386
+# successes: 296 (76.7%)
+
+Task: turn on the stove
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=387--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 387
+# successes: 297 (76.7%)
+
+Task: turn on the stove
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=388--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 388
+# successes: 298 (76.8%)
+
+Task: turn on the stove
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=389--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 389
+# successes: 299 (76.9%)
+
+Task: turn on the stove
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=390--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 390
+# successes: 300 (76.9%)
+
+Task: turn on the stove
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=391--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 391
+# successes: 301 (77.0%)
+
+Task: turn on the stove
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=392--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 392
+# successes: 302 (77.0%)
+
+Task: turn on the stove
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=393--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 393
+# successes: 303 (77.1%)
+
+Task: turn on the stove
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=394--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 394
+# successes: 304 (77.2%)
+
+Task: turn on the stove
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=395--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 395
+# successes: 305 (77.2%)
+
+Task: turn on the stove
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=396--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 396
+# successes: 306 (77.3%)
+
+Task: turn on the stove
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=397--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 397
+# successes: 307 (77.3%)
+
+Task: turn on the stove
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=398--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 398
+# successes: 308 (77.4%)
+
+Task: turn on the stove
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=399--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 399
+# successes: 309 (77.4%)
+
+Task: turn on the stove
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=400--success=True--task=turn_on_the_stove.mp4
+Success: True
+# episodes completed so far: 400
+# successes: 310 (77.5%)
+Current task success rate: 0.98
+Current total success rate: 0.775
+
+Task: put the bowl on the plate
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=401--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 401
+# successes: 311 (77.6%)
+
+Task: put the bowl on the plate
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=402--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 402
+# successes: 312 (77.6%)
+
+Task: put the bowl on the plate
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=403--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 403
+# successes: 313 (77.7%)
+
+Task: put the bowl on the plate
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=404--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 404
+# successes: 314 (77.7%)
+
+Task: put the bowl on the plate
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=405--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 405
+# successes: 315 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=406--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 406
+# successes: 316 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=407--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 407
+# successes: 317 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=408--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 408
+# successes: 318 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=409--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 409
+# successes: 318 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=410--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 410
+# successes: 319 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=411--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 411
+# successes: 320 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=412--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 412
+# successes: 321 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=413--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 413
+# successes: 322 (78.0%)
+
+Task: put the bowl on the plate
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=414--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 414
+# successes: 322 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=415--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 415
+# successes: 323 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=416--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 416
+# successes: 324 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=417--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 417
+# successes: 324 (77.7%)
+
+Task: put the bowl on the plate
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=418--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 418
+# successes: 325 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=419--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 419
+# successes: 326 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=420--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 420
+# successes: 327 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=421--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 421
+# successes: 328 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=422--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 422
+# successes: 328 (77.7%)
+
+Task: put the bowl on the plate
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=423--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 423
+# successes: 329 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=424--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 424
+# successes: 329 (77.6%)
+
+Task: put the bowl on the plate
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=425--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 425
+# successes: 330 (77.6%)
+
+Task: put the bowl on the plate
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=426--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 426
+# successes: 331 (77.7%)
+
+Task: put the bowl on the plate
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=427--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 427
+# successes: 332 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=428--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 428
+# successes: 333 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=429--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 429
+# successes: 334 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=430--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 430
+# successes: 334 (77.7%)
+
+Task: put the bowl on the plate
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=431--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 431
+# successes: 335 (77.7%)
+
+Task: put the bowl on the plate
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=432--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 432
+# successes: 336 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=433--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 433
+# successes: 337 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=434--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 434
+# successes: 338 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=435--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 435
+# successes: 338 (77.7%)
+
+Task: put the bowl on the plate
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=436--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 436
+# successes: 339 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=437--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 437
+# successes: 340 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=438--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 438
+# successes: 341 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=439--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 439
+# successes: 342 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=440--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 440
+# successes: 343 (78.0%)
+
+Task: put the bowl on the plate
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=441--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 441
+# successes: 343 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=442--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 442
+# successes: 344 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=443--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 443
+# successes: 345 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=444--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 444
+# successes: 346 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=445--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 445
+# successes: 347 (78.0%)
+
+Task: put the bowl on the plate
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=446--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 446
+# successes: 347 (77.8%)
+
+Task: put the bowl on the plate
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=447--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 447
+# successes: 348 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=448--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 448
+# successes: 349 (77.9%)
+
+Task: put the bowl on the plate
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=449--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 449
+# successes: 350 (78.0%)
+
+Task: put the bowl on the plate
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=450--success=True--task=put_the_bowl_on_the_plate.mp4
+Success: True
+# episodes completed so far: 450
+# successes: 351 (78.0%)
+Current task success rate: 0.82
+Current total success rate: 0.78
+
+Task: put the wine bottle on the rack
+Starting episode 1...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=451--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 451
+# successes: 351 (77.8%)
+
+Task: put the wine bottle on the rack
+Starting episode 2...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=452--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 452
+# successes: 351 (77.7%)
+
+Task: put the wine bottle on the rack
+Starting episode 3...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=453--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 453
+# successes: 352 (77.7%)
+
+Task: put the wine bottle on the rack
+Starting episode 4...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=454--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 454
+# successes: 353 (77.8%)
+
+Task: put the wine bottle on the rack
+Starting episode 5...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=455--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 455
+# successes: 354 (77.8%)
+
+Task: put the wine bottle on the rack
+Starting episode 6...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=456--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 456
+# successes: 354 (77.6%)
+
+Task: put the wine bottle on the rack
+Starting episode 7...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=457--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 457
+# successes: 354 (77.5%)
+
+Task: put the wine bottle on the rack
+Starting episode 8...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=458--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 458
+# successes: 355 (77.5%)
+
+Task: put the wine bottle on the rack
+Starting episode 9...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=459--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 459
+# successes: 355 (77.3%)
+
+Task: put the wine bottle on the rack
+Starting episode 10...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=460--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 460
+# successes: 356 (77.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 11...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=461--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 461
+# successes: 357 (77.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 12...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=462--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 462
+# successes: 358 (77.5%)
+
+Task: put the wine bottle on the rack
+Starting episode 13...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=463--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 463
+# successes: 358 (77.3%)
+
+Task: put the wine bottle on the rack
+Starting episode 14...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=464--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 464
+# successes: 359 (77.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 15...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=465--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 465
+# successes: 360 (77.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 16...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=466--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 466
+# successes: 361 (77.5%)
+
+Task: put the wine bottle on the rack
+Starting episode 17...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=467--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 467
+# successes: 361 (77.3%)
+
+Task: put the wine bottle on the rack
+Starting episode 18...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=468--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 468
+# successes: 362 (77.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 19...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=469--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 469
+# successes: 363 (77.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 20...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=470--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 470
+# successes: 364 (77.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 21...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=471--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 471
+# successes: 365 (77.5%)
+
+Task: put the wine bottle on the rack
+Starting episode 22...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=472--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 472
+# successes: 365 (77.3%)
+
+Task: put the wine bottle on the rack
+Starting episode 23...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=473--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 473
+# successes: 366 (77.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 24...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=474--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 474
+# successes: 366 (77.2%)
+
+Task: put the wine bottle on the rack
+Starting episode 25...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=475--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 475
+# successes: 366 (77.1%)
+
+Task: put the wine bottle on the rack
+Starting episode 26...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=476--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 476
+# successes: 367 (77.1%)
+
+Task: put the wine bottle on the rack
+Starting episode 27...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=477--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 477
+# successes: 367 (76.9%)
+
+Task: put the wine bottle on the rack
+Starting episode 28...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=478--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 478
+# successes: 367 (76.8%)
+
+Task: put the wine bottle on the rack
+Starting episode 29...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=479--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 479
+# successes: 368 (76.8%)
+
+Task: put the wine bottle on the rack
+Starting episode 30...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=480--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 480
+# successes: 369 (76.9%)
+
+Task: put the wine bottle on the rack
+Starting episode 31...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=481--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 481
+# successes: 370 (76.9%)
+
+Task: put the wine bottle on the rack
+Starting episode 32...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=482--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 482
+# successes: 370 (76.8%)
+
+Task: put the wine bottle on the rack
+Starting episode 33...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=483--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 483
+# successes: 370 (76.6%)
+
+Task: put the wine bottle on the rack
+Starting episode 34...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=484--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 484
+# successes: 371 (76.7%)
+
+Task: put the wine bottle on the rack
+Starting episode 35...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=485--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 485
+# successes: 371 (76.5%)
+
+Task: put the wine bottle on the rack
+Starting episode 36...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=486--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 486
+# successes: 372 (76.5%)
+
+Task: put the wine bottle on the rack
+Starting episode 37...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=487--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 487
+# successes: 373 (76.6%)
+
+Task: put the wine bottle on the rack
+Starting episode 38...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=488--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 488
+# successes: 374 (76.6%)
+
+Task: put the wine bottle on the rack
+Starting episode 39...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=489--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 489
+# successes: 375 (76.7%)
+
+Task: put the wine bottle on the rack
+Starting episode 40...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=490--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 490
+# successes: 376 (76.7%)
+
+Task: put the wine bottle on the rack
+Starting episode 41...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=491--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 491
+# successes: 376 (76.6%)
+
+Task: put the wine bottle on the rack
+Starting episode 42...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=492--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 492
+# successes: 377 (76.6%)
+
+Task: put the wine bottle on the rack
+Starting episode 43...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=493--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 493
+# successes: 378 (76.7%)
+
+Task: put the wine bottle on the rack
+Starting episode 44...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=494--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 494
+# successes: 379 (76.7%)
+
+Task: put the wine bottle on the rack
+Starting episode 45...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=495--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 495
+# successes: 379 (76.6%)
+
+Task: put the wine bottle on the rack
+Starting episode 46...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=496--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 496
+# successes: 379 (76.4%)
+
+Task: put the wine bottle on the rack
+Starting episode 47...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=497--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 497
+# successes: 379 (76.3%)
+
+Task: put the wine bottle on the rack
+Starting episode 48...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=498--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 498
+# successes: 379 (76.1%)
+
+Task: put the wine bottle on the rack
+Starting episode 49...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=499--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 499
+# successes: 380 (76.2%)
+
+Task: put the wine bottle on the rack
+Starting episode 50...
+Saved rollout MP4 at path ./rollouts/2024_11_29/2024_11_29-09_11_59--episode=500--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+Success: True
+# episodes completed so far: 500
+# successes: 381 (76.2%)
+Current task success rate: 0.6
+Current total success rate: 0.762

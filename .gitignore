@@ -1,0 +1,9 @@
+llm_weights/
+
+simulation/openvla/modified_models/
+
+*.mp4
+
+simulation/openvla/LIBERO/
+
+FLAP/llm_weights/

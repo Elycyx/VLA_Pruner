@@ -1,0 +1,4 @@
+SciPy
+scikit-learn
+tensorboardX
+datasets

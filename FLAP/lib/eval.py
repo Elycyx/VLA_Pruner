@@ -5,12 +5,11 @@ import torch.nn as nn
 from .data import get_loaders 
 
 # Function to evaluate perplexity (ppl) on a specified model and tokenizer
-def eval_ppl(args, model, tokenizer, device=torch.device("cuda:0")):
+def eval_ppl(model, tokenizer, device=torch.device("cuda:0")):
     """
     Evaluate perplexity (ppl) on a specified model and tokenizer.
 
     Args:
-        args: Command line arguments
         model (torch.nn.Module): The language model to be evaluated.
         tokenizer (Tokenizer): Tokenizer instance for encoding texts.
         device (torch.device): Device to move data onto (e.g., 'cuda:0' or 'cpu').
@@ -26,20 +25,17 @@ def eval_ppl(args, model, tokenizer, device=torch.device("cuda:0")):
 
     # Get the test loader
     _, testloader = get_loaders(
-        dataset, 
-        seed=0, 
-        seqlen=args.seqlen,  # 使用args中的seqlen而不是model.seqlen
-        tokenizer=tokenizer,
-        nsamples=args.nsamples
+        dataset, seed=0, seqlen=model.seqlen, tokenizer=tokenizer 
     )
 
     # Evaluate perplexity in no grad context to avoid updating the model
     with torch.no_grad():
-        ppl = eval_ppl_wikitext(args, model, testloader, 1, device)
-    return ppl
+        # Perplexity measures how well the probability distribution predicted by the model aligns with the actual distribution of the words. Lower perplexity is better.
+        ppl = eval_ppl_wikitext(model, testloader, 1, device)
+    return ppl 
 
 # Function to evaluate perplexity (ppl) specifically on the wikitext dataset
-def eval_ppl_wikitext(args,model, testenc, bs=1, device=None):
+def eval_ppl_wikitext(model, testenc, bs=1, device=None):
     """
     Evaluate perplexity (ppl) specifically on the wikitext dataset.
 
@@ -56,8 +52,8 @@ def eval_ppl_wikitext(args,model, testenc, bs=1, device=None):
     testenc = testenc.input_ids
 
     # Calculate number of samples
-    # nsamples = testenc.numel() // model.seqlen
-    nsamples = args.nsamples
+    nsamples = testenc.numel() // model.seqlen
+
     # List to store negative log likelihoods
     nlls = []
     print(f"nsamples {nsamples}")

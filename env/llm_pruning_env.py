@@ -141,18 +141,10 @@ class LLMPruningEnv:
                 self.device
             )
             #self.pruned_model.language_model.save_pretrained('results/pruned_model')
-            print(self.pruned_model.language_model)
+            # print(self.pruned_model.language_model)
             #tokenizer = AutoTokenizer.from_pretrained('openvla/openvla-7b-finetuned-libero-spatial', trust_remote_code=True)
             #tokenizer.save_pretrained('results/pruned_tokenizer')
-            # 打印调试信息
-            # for i, layer in enumerate(self.pruned_model.language_model.model.layers):
-            #     print(layer)
-            #     print(f"Layer {i}: num_heads={layer.self_attn.num_heads}, "
-            #           f"num_attention_heads={layer.self_attn.num_attention_heads}, "
-            #           f"num_key_value_heads={layer.self_attn.num_key_value_heads}, "
-            #           f"hidden_size={layer.self_attn.hidden_size}, "
-            #           f"head_dim={layer.self_attn.head_dim}")
-            
+
             # calculate the number of parameters
             num_params = sum(p.numel() for p in self.pruned_model.parameters())
             print(f'number of parameters: {num_params/1e9:.2f}B')

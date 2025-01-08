@@ -141,7 +141,7 @@ class LLMPruningEnv:
                 self.device
             )
             #self.pruned_model.language_model.save_pretrained('results/pruned_model')
-            # print(self.pruned_model.language_model)
+            print(self.pruned_model.language_model)
             #tokenizer = AutoTokenizer.from_pretrained('openvla/openvla-7b-finetuned-libero-spatial', trust_remote_code=True)
             #tokenizer.save_pretrained('results/pruned_tokenizer')
 

@@ -35,7 +35,7 @@ def parse_args():
     parser.add_argument('--hidden2', default=300, type=int, help='hidden num of second fully connect layer')
     parser.add_argument('--lr_c', default=1e-3, type=float, help='learning rate for critic')
     parser.add_argument('--lr_a', default=1e-4, type=float, help='learning rate for actor')
-    parser.add_argument('--warmup', default=50, type=int, help='time without training but only filling the replay memory')
+    parser.add_argument('--warmup', default=2, type=int, help='time without training but only filling the replay memory')
     parser.add_argument('--discount', default=1., type=float, help='discount factor')
     parser.add_argument('--bsize', default=32, type=int, help='minibatch size')
     parser.add_argument('--rmsize', default=100, type=int, help='memory size for each layer')

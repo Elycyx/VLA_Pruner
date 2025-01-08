@@ -7,3 +7,7 @@ simulation/openvla/modified_models/
 simulation/openvla/LIBERO/
 
 FLAP/llm_weights/
+
+pruned_models/
+
+rollouts/

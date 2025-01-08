@@ -347,7 +347,7 @@ def prune_flap(args, model, tokenizer, device=torch.device("cuda:0")):
                     attn_mask.append(W_mask)
                 else:
                     attn_metric_list.append(W_metric.cpu())
-                attn_baseline_inp_list.append(wrapped_layers[name].baseline_inp.type(torch.half))
+                attn_baseline_inp_list.append(wrapped_layers[name].baseline_inp.type(torch.bfloat16))
             else:
                 W_metric = metrics[args.metrics](wrapped_layers, subset, name)
                 if args.structure == "UL-UM":
@@ -360,7 +360,7 @@ def prune_flap(args, model, tokenizer, device=torch.device("cuda:0")):
                     mlp_mask.append(W_mask)
                 else:
                     mlp_metric_list.append(W_metric.cpu())
-                mlp_baseline_inp_list.append(wrapped_layers[name].baseline_inp.type(torch.half))
+                mlp_baseline_inp_list.append(wrapped_layers[name].baseline_inp.type(torch.bfloat16))
             wrapped_layers[name].free()
 
         inps, outs = outs, inps # Use the original output as input to the next layer
@@ -389,7 +389,7 @@ def prune_flap(args, model, tokenizer, device=torch.device("cuda:0")):
             sorted_prune, indices = torch.sort(prune_metric, descending=True)
             compression_weight = torch.ones_like(indices)
             compression_weight[indices < attn_metric.numel()] = 512.0 / 3
-            threshold = sorted_prune[torch.argmin(torch.abs(torch.cumsum(compression_weight, 0) - torch.sum(compression_weight)*(1 - args.pruning_ratio)))]
+            threshold = sorted_prune[torch.argmin(torch.abs(torch.cumsum(compression_weight, 0) - torch.sum(compression_weight)*args.preserve_ratio))]
             attn_mask = (attn_metric > threshold)
             mlp_mask = (mlp_metric > threshold)
     else:
@@ -618,7 +618,7 @@ def prune_with_predefined_ratio(args, model, tokenizer, layer_ratios: List[float
     sorted_prune, indices = torch.sort(prune_metric, descending=True)
     compression_weight = torch.ones_like(indices)
     compression_weight[indices < attn_metric.numel()] = 512.0 / 3
-    threshold = sorted_prune[torch.argmin(torch.abs(torch.cumsum(compression_weight, 0) - torch.sum(compression_weight)*(1 - current_ratio)))]
+    threshold = sorted_prune[torch.argmin(torch.abs(torch.cumsum(compression_weight, 0) - torch.sum(compression_weight)*current_ratio))]
     attn_mask = (attn_metric > threshold)
     mlp_mask = (mlp_metric > threshold)
 

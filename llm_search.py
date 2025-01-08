@@ -29,6 +29,7 @@ def parse_args():
     parser.add_argument('--nsamples', type=int, default=128, help='Number of calibration samples')
     parser.add_argument('--seed', type=int, default=0, help='Seed for sampling the calibration data')
     parser.add_argument('--unstr', action='store_true', help='Whether to use unstructured pruning')
+    parser.add_argument("--structure", type=str, default="AL-AM", choices=["UL-UM", "UL-MM", "AL-MM", "AL-AM", 'N/A'])
     
     # ddpg
     parser.add_argument('--hidden1', default=400, type=int, help='hidden num of first fully connect layer')
@@ -116,7 +117,10 @@ def train_and_prune(agent, env, num_episode, output_dir):
             agent.reset(observation)
 
         # 选择动作
-        if episode <= args.warmup:
+        if episode == 0 and hasattr(env, 'flap_preserve_ratios'):
+            # 第一个episode使用FLAP的结果
+            action = env.flap_preserve_ratios[episode_steps]
+        elif episode <= args.warmup:
             action = agent.random_action()
         else:
             action = agent.select_action(observation, episode=episode)
@@ -134,10 +138,10 @@ def train_and_prune(agent, env, num_episode, output_dir):
         observation = deepcopy(observation2)
 
         if done:  # 回合结束
-            print('#{}: Last episode_reward:{:.4f} success_rate: {:.4f}, ratio: {:.4f}'.format(
+            print('#{}: Last episode_reward:{:.4f} success_rate: {:.4f}, compress_ratio: {:.4f}'.format(
                 episode, episode_reward, info['success_rate'], info['compress_ratio']))
             text_writer.write(
-                '#{}: Last episode_reward:{:.4f} success_rate: {:.4f}, ratio: {:.4f}\n'.format(
+                '#{}: Last episode_reward:{:.4f} success_rate: {:.4f}, compress_ratio: {:.4f}\n'.format(
                     episode, episode_reward, info['success_rate'], info['compress_ratio']))
             
             final_reward = T[-1][0]

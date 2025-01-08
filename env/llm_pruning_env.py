@@ -141,21 +141,23 @@ class LLMPruningEnv:
                 self.device
             )
             #self.pruned_model.language_model.save_pretrained('results/pruned_model')
-            print(self.pruned_model.language_model)
+            # print(self.pruned_model.language_model)
             #tokenizer = AutoTokenizer.from_pretrained('openvla/openvla-7b-finetuned-libero-spatial', trust_remote_code=True)
             #tokenizer.save_pretrained('results/pruned_tokenizer')
 
             # calculate the number of parameters
             num_params = sum(p.numel() for p in self.pruned_model.parameters())
             print(f'number of parameters: {num_params/1e9:.2f}B')
+            print('current strategy: ', self.strategy)
+            print('avarage strategy: ', sum(self.strategy) / len(self.strategy))
+            print('pruning ratio: ', 1 - (num_params / self.org_param_size))
             
             # 评估剪枝后的性能
             # print('start to evaluate model')
             # print(self.eval_config)
             current_success_rate = self._evaluate_model(self.pruned_model)
             print('evaluate model done')
-            current_ratio = float(sum(self.strategy)) / len(self.strategy)
-            
+            current_ratio = float(num_params / self.org_param_size)
             # 计算奖励
             reward = float(self._calculate_reward(current_success_rate, current_ratio))
             
@@ -200,6 +202,20 @@ class LLMPruningEnv:
         self.extract_time = 0
         self.fit_time = 0
         self.val_time = 0
+        
+        # 如果是第一次reset且没有初始化过FLAP策略
+        if not hasattr(self, 'flap_init_done'):
+            self.flap_preserve_ratios = self.initialize_with_flap()
+            self.flap_init_done = True
+            # 将FLAP的结果作为初始最佳策略
+            self.best_strategy = self.flap_preserve_ratios
+            # 评估FLAP策略的效果
+            for ratio in self.flap_preserve_ratios:
+                _, reward, _, info = self.step(ratio)
+            self.best_reward = reward
+            print(f"=> Initial FLAP strategy reward: {reward:.4f}")
+            # 重置环境以开始RL训练
+            return self.reset()
         
         return self.layer_embedding[0].copy()
 
@@ -256,3 +272,48 @@ class LLMPruningEnv:
             'fit_time': self.fit_time,
             'val_time': self.val_time
         } 
+
+    def initialize_with_flap(self):
+        """
+        使用FLAP进行初始剪枝，并返回每层的保留率作为初始策略
+        
+        Returns:
+            List[float]: 每层的保留率列表
+        """
+        print("=> Initializing with FLAP pruning...")
+        
+        # 创建模型副本进行FLAP剪枝
+        flap_model = copy.deepcopy(self.model)
+        flap_model.language_model.seqlen = 128
+        
+        # 记录原始每层的参数数量
+        original_sizes = []
+        for layer in flap_model.language_model.model.layers:
+            # 记录attention和mlp的参数数量
+            attn_params = sum(p.numel() for p in layer.self_attn.parameters())
+            mlp_params = sum(p.numel() for p in layer.mlp.parameters())
+            original_sizes.append(attn_params + mlp_params)
+        
+        # 执行FLAP剪枝
+        from FLAP.lib.prune import prune_flap
+        prune_flap(
+            self.args,
+            flap_model.language_model,
+            self.tokenizer,
+            self.device
+        )
+        
+        # 计算每层的保留率
+        preserved_ratios = []
+        for i, layer in enumerate(flap_model.language_model.model.layers):
+            # 计算剪枝后的参数数量
+            current_attn_params = sum(p.numel() for p in layer.self_attn.parameters())
+            current_mlp_params = sum(p.numel() for p in layer.mlp.parameters())
+            current_total = current_attn_params + current_mlp_params
+            
+            # 计算保留率
+            preserve_ratio = float(current_total) / original_sizes[i]
+            preserved_ratios.append(preserve_ratio)
+        
+        print(f"=> FLAP initialization complete. Layer-wise preserve ratios: {preserved_ratios}")
+        return preserved_ratios 

@@ -546,11 +546,6 @@ def prune_with_predefined_ratio(args, model, tokenizer, layer_ratios: List[float
         )
     
     layers = model.model.layers
-
-    attn_metric_list, mlp_metric_list = [], []
-    attn_baseline_inp_list, mlp_baseline_inp_list = [], []
-    attn_mask, mlp_mask = [], []
-
     assert len(layer_ratios) == len(layers), f"层数不匹配: {len(layer_ratios)} vs {len(layers)}"
 
     for i in tqdm(range(len(layers)), desc="Processing layers"):
@@ -584,55 +579,56 @@ def prune_with_predefined_ratio(args, model, tokenizer, layer_ratios: List[float
         
         for h in handles:
             h.remove()
-        
-        
+
+        # Calculate metrics for current layer
+        attn_metric = None
+        mlp_metric = None
+        attn_baseline_inp = None
+        mlp_baseline_inp = None
+
         for name in subset:
             if name == 'self_attn.o_proj':
                 W_metric = metrics[args.metrics](wrapped_layers, subset, name) ** 2
-                attn_metric_list.append(W_metric.cpu())
-                attn_baseline_inp_list.append(wrapped_layers[name].baseline_inp.type(torch.bfloat16))
-
-               
+                attn_metric = W_metric.cpu()
+                attn_baseline_inp = wrapped_layers[name].baseline_inp.type(torch.bfloat16)
             else:
                 W_metric = metrics[args.metrics](wrapped_layers, subset, name)
-                mlp_metric_list.append(W_metric.cpu())
-                mlp_baseline_inp_list.append(wrapped_layers[name].baseline_inp.type(torch.bfloat16))
-                
+                mlp_metric = W_metric.cpu()
+                mlp_baseline_inp = wrapped_layers[name].baseline_inp.type(torch.bfloat16)
             wrapped_layers[name].free()
 
+        # Standardize metrics for current layer
+        standarlization = lambda x: (x - torch.mean(x)) / torch.std(x)
+        
+        attn_metric = standarlization(attn_metric)
+        attn_metric = attn_metric.reshape(-1, 128).mean(dim=1)
+        mlp_metric = standarlization(mlp_metric)
+
+        # Calculate threshold and masks for current layer
+        prune_metric = torch.cat([attn_metric.view(-1), mlp_metric.view(-1)])
+        sorted_prune, indices = torch.sort(prune_metric, descending=True)
+        compression_weight = torch.ones_like(indices)
+        compression_weight[indices < attn_metric.numel()] = 512.0 / 3
+        threshold = sorted_prune[torch.argmin(torch.abs(torch.cumsum(compression_weight, 0) - torch.sum(compression_weight)*current_ratio))]
+        
+        current_attn_mask = (attn_metric > threshold)
+        current_mlp_mask = (mlp_metric > threshold)
+
+        # Compress current layer immediately
+        if f"model.layers.{i}" in getattr(model, 'hf_device_map', {}):
+            dev = model.hf_device_map[f"model.layers.{i}"]
+            compress(layer, current_attn_mask, None, attn_baseline_inp, None, dev, unstr=args.unstr)
+            compress(layer, None, current_mlp_mask, None, mlp_baseline_inp, dev, unstr=args.unstr)
+        else:
+            compress(layer, current_attn_mask, None, attn_baseline_inp, None, device, unstr=args.unstr)
+            compress(layer, None, current_mlp_mask, None, mlp_baseline_inp, device, unstr=args.unstr)
+
+        # Update inputs for next layer
+        for j in range(args.nsamples):
+            with torch.no_grad():
+                outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask, position_ids=position_ids)[0]
         inps, outs = outs, inps
         torch.cuda.empty_cache()
-
-    standarlization = lambda x: (x - torch.mean(x, axis=1, keepdim=True)) / torch.std(x, axis=1, keepdim=True)
-
-    # Ours should be ML-AM
-    attn_metric = torch.stack(attn_metric_list)
-    attn_metric = standarlization(attn_metric)
-    attn_metric = attn_metric.reshape(len(layers), -1, 128).mean(dim=2)
-
-    mlp_metric = torch.stack(mlp_metric_list)
-    mlp_metric = standarlization(mlp_metric)
-
-    # Ml-AM metric and threshold
-    prune_metric = torch.cat([attn_metric.view(-1), mlp_metric.view(-1)])
-    sorted_prune, indices = torch.sort(prune_metric, descending=True)
-    compression_weight = torch.ones_like(indices)
-    compression_weight[indices < attn_metric.numel()] = 512.0 / 3
-    threshold = sorted_prune[torch.argmin(torch.abs(torch.cumsum(compression_weight, 0) - torch.sum(compression_weight)*current_ratio))]
-    attn_mask = (attn_metric > threshold)
-    mlp_mask = (mlp_metric > threshold)
-
-    # start compressing
-    for idx in range(len(layers)):
-        if f"model.layers.{i}" in getattr(model, 'hf_device_map', {}): 
-            compress(model.model.layers[idx], attn_mask[idx], None, attn_baseline_inp_list[idx], None, model.hf_device_map[f"model.layers.{idx}"], unstr=args.unstr)
-        else:
-            compress(model.model.layers[idx], attn_mask[idx], None, attn_baseline_inp_list[idx], None, device, unstr=args.unstr)
-                
-        if f"model.layers.{i}" in getattr(model, 'hf_device_map', {}): 
-            compress(model.model.layers[idx], None, mlp_mask[idx], None, mlp_baseline_inp_list[idx], model.hf_device_map[f"model.layers.{idx}"], unstr=args.unstr)
-        else:
-            compress(model.model.layers[idx], None, mlp_mask[idx], None, mlp_baseline_inp_list[idx], device, unstr=args.unstr)
 
     model.config.use_cache = use_cache
     torch.cuda.empty_cache()

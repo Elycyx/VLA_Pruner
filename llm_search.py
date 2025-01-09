@@ -36,7 +36,7 @@ def parse_args():
     parser.add_argument('--hidden2', default=300, type=int, help='hidden num of second fully connect layer')
     parser.add_argument('--lr_c', default=1e-3, type=float, help='learning rate for critic')
     parser.add_argument('--lr_a', default=1e-4, type=float, help='learning rate for actor')
-    parser.add_argument('--warmup', default=2, type=int, help='time without training but only filling the replay memory')
+    parser.add_argument('--warmup', default=0, type=int, help='time without training but only filling the replay memory')
     parser.add_argument('--discount', default=1., type=float, help='discount factor')
     parser.add_argument('--bsize', default=32, type=int, help='minibatch size')
     parser.add_argument('--rmsize', default=100, type=int, help='memory size for each layer')
@@ -97,7 +97,24 @@ def parse_args():
         
 #     model.seqlen = 128
 #     return model
-
+def get_model_config(model) -> dict:
+    """Get model configuration including attention features and intermediate sizes"""
+    attention_features = []
+    intermediate_sizes = []
+    
+    for layer in model.model.layers:
+        attention_features.append(layer.self_attn.q_proj.out_features)
+        intermediate_sizes.append(layer.mlp.gate_proj.out_features)
+    
+    text_config = {
+        "model_type": "pruned_llama",
+        "pad_token_id": 32000,
+        "torch_dtype": "bfloat16",
+        "vocab_size": 32064,
+        "per_layer_attention_feature_size": attention_features,
+        "per_layer_intermediate_size": intermediate_sizes
+    }
+    return {"text_config": text_config}
 
 def train_and_prune(agent, env, num_episode, output_dir):
     """训练DDPG代理并执行剪枝"""
@@ -186,6 +203,22 @@ def train_and_prune(agent, env, num_episode, output_dir):
     # 保存剪枝后的模型
     env.model.save_pretrained(output_dir)
     env.tokenizer.save_pretrained(output_dir)
+     # 获取并保存新的配置
+    import json
+    config = get_model_config(env.model.language_model)
+    
+    # 如果已存在配置文件，先读取它
+    config_path = os.path.join(output_dir, 'config.json')
+    if os.path.exists(config_path):
+        with open(config_path, 'r') as f:
+            existing_config = json.load(f)
+            # 只更新text_config部分
+            existing_config['text_config'] = config['text_config']
+            config = existing_config
+    
+    with open(config_path, 'w') as f:
+        json.dump(config, f, indent=2, ensure_ascii=False)
+
     print(f"=> Pruned model saved to {output_dir}")
 
 
@@ -215,9 +248,7 @@ if __name__ == "__main__":
     env = LLMPruningEnv(
         model=model,
         tokenizer=tokenizer,
-        args=args,
-        preserve_ratio=args.preserve_ratio,
-        device=device
+        args=args
     )
 
     # 创建输出目录

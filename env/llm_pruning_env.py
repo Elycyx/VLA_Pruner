@@ -20,7 +20,7 @@ class LLMPruningEnv:
     """
     Environment for LLM pruning search
     """
-    def __init__(self, model, tokenizer, args, preserve_ratio=0.5, device=torch.device("cuda:0")):
+    def __init__(self, model, tokenizer, args):
         """
         初始化LLM剪枝环境
         
@@ -41,8 +41,8 @@ class LLMPruningEnv:
         self.model = model
         self.tokenizer = tokenizer
         self.args = args
-        self.device = device
-        self.preserve_ratio = preserve_ratio
+        self.device = args.device
+        self.preserve_ratio = args.preserve_ratio
         
         # 获取模型层数
         self.num_layers = len(self.model.language_model.model.layers)
@@ -50,6 +50,17 @@ class LLMPruningEnv:
         # 计算原始模型大小
         self.org_param_size = sum(p.numel() for p in model.parameters())
         print(f'=> Original model size: {self.org_param_size/1e9:.2f}B parameters')
+        
+        # 添加新的属性来跟踪总体计算量
+        self.expected_preserve_computation = self.org_param_size * self.preserve_ratio
+        print(f'=> Expected preserve computation: {self.expected_preserve_computation/1e9:.2f}B parameters')
+        
+        # 为每一层计算参数量
+        self.layer_params = []
+        for layer in self.model.language_model.model.layers:
+            attn_params = sum(p.numel() for p in layer.self_attn.parameters())
+            mlp_params = sum(p.numel() for p in layer.mlp.parameters())
+            self.layer_params.append(attn_params + mlp_params)
         
         # 设置LIBERO评估配置
         self.eval_config = GenerateConfig(
@@ -110,10 +121,48 @@ class LLMPruningEnv:
         self.layer_embedding = layer_embedding
         print(f'=> State embedding shape: {self.layer_embedding.shape}')
 
+    def _action_wall(self, action, current_layer_idx):
+        """控制动作以确保满足总体保留率要求
+        
+        Args:
+            action: 原始动作值（保留率）
+            current_layer_idx: 当前层的索引
+            
+        Returns:
+            float: 调整后的动作值
+        """
+        action = float(action)
+        action = np.clip(action, self.lbound, self.rbound)
+        
+        # 计算其他层的参数量
+        other_params = 0
+        this_layer_params = self.layer_params[current_layer_idx]
+        
+        # 计算已经确定的层的参数量
+        for i in range(len(self.strategy)):
+            other_params += self.layer_params[i] * self.strategy[i]
+            
+        # 计算剩余未处理层的参数量（假设全部保留）
+        for i in range(current_layer_idx + 1, len(self.layer_params)):
+            other_params += self.layer_params[i]
+            
+        # 计算当前层最大可保留的比例
+        max_preserve_ratio = (self.expected_preserve_computation - other_params) / this_layer_params
+        
+        # 确保动作值不会导致总体保留率超过目标
+        action = np.minimum(action, max_preserve_ratio)
+        # 确保不低于最小保留率
+        action = np.maximum(action, self.lbound)
+        
+        return action
+
     def step(self, action):
         """执行一个剪枝动作并返回新的状态、奖励和是否完成"""
+        # 使用 action_wall 调整动作值
+        action = self._action_wall(action, len(self.strategy))
+        
         # 更新当前层的策略
-        self.strategy.append(float(action))  # 确保action是float类型
+        self.strategy.append(float(action))
         
         # 执行剪枝
         layer_idx = len(self.strategy) - 1
@@ -157,27 +206,27 @@ class LLMPruningEnv:
             # print(self.eval_config)
             current_success_rate = self._evaluate_model(self.pruned_model)
             print('evaluate model done')
-            current_ratio = float(num_params / self.org_param_size)
+            current_pruning_ratio = 1 - float(num_params / self.org_param_size)
             # 计算奖励
-            reward = float(self._calculate_reward(current_success_rate, current_ratio))
+            reward = float(self._calculate_reward(current_success_rate, current_pruning_ratio))
             
             # 更新最佳策略
             if reward > self.best_reward:
                 self.best_reward = float(reward)
                 self.best_strategy = [float(x) for x in self.strategy]
-                print(f'New best reward: {reward:.4f}, success rate: {current_success_rate:.4f}, ratio: {current_ratio:.4f}')
+                print(f'New best reward: {reward:.4f}, success rate: {current_success_rate:.4f}, ratio: {current_pruning_ratio:.4f}')
                 print(f'New best strategy: {self.best_strategy}')
         else:
             reward = 0.0
             current_success_rate = 0.0
-            current_ratio = 0.0
+            current_pruning_ratio = 0.0
             
         # 返回下一个状态（如果未完成）或当前状态（如果完成）
         next_observation = self.layer_embedding[len(self.strategy), :].copy() if not done else self.layer_embedding[layer_idx, :].copy()
         
         info = {
             'success_rate': float(current_success_rate) if done else 0.0,
-            'compress_ratio': float(current_ratio) if done else 0.0
+            'compress_ratio': float(current_pruning_ratio) if done else 0.0
         }
         
         return next_observation, float(reward), done, info
@@ -255,7 +304,7 @@ class LLMPruningEnv:
             reward: 奖励值
         """
 
-        beta = 0.3  # 超参数，可以调整压缩率的权重
+        beta = 0.5  # 超参数，可以调整压缩率的权重
         # 总奖励 = 成功率比例 + beta * 压缩率
         reward = current_success_rate + beta * compress_ratio
         

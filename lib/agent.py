@@ -119,8 +119,6 @@ class DDPG(object):
         else:
             self.moving_average += self.moving_alpha * (batch_mean_reward - self.moving_average)
         reward_batch -= self.moving_average
-        # if reward_batch.std() > 0:
-        #     reward_batch /= reward_batch.std()
 
         # Prepare for the target q batch
         with torch.no_grad():
@@ -130,7 +128,7 @@ class DDPG(object):
             ])
 
         target_q_batch = to_tensor(reward_batch) + \
-                         self.discount * to_tensor(terminal_batch.astype(np.float)) * next_q_values
+                        self.discount * to_tensor(terminal_batch.astype(np.float64)) * next_q_values
 
         # Critic update
         self.critic.zero_grad()

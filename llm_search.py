@@ -23,7 +23,7 @@ def parse_args():
                        help='Directory to cache model weights')
     parser.add_argument('--preserve_ratio', type=float, default=0.5,
                        help='Target ratio to preserve weights')
-    parser.add_argument('--lbound', default=0.1, type=float, help='minimum preserve ratio')
+    parser.add_argument('--lbound', default=0.5, type=float, help='minimum preserve ratio')
     parser.add_argument('--rbound', default=1., type=float, help='maximum preserve ratio')
     parser.add_argument('--metrics', type=str, default="WIFV", choices=["IFV", "WIFV", "WIFN"])
     parser.add_argument('--nsamples', type=int, default=128, help='Number of calibration samples')

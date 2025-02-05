@@ -11,3 +11,7 @@ FLAP/llm_weights/
 pruned_models/
 
 rollouts/
+
+results/
+
+experiments/

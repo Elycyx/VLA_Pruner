@@ -632,3 +632,114 @@ def prune_with_predefined_ratio(args, model, tokenizer, layer_ratios: List[float
 
     model.config.use_cache = use_cache
     torch.cuda.empty_cache()
+
+
+def prune_per_layer(args, model, tokenizer, layer_index, ratio, device=torch.device("cuda:0")):
+    """
+    对指定层进行剪枝
+    params:
+        args: 配置参数
+        model: 要剪枝的模型
+        tokenizer: 分词器
+        layer_index: 要剪枝的层索引
+        ratio: 剪枝比例
+        device: 运行设备
+    """
+    use_cache = model.config.use_cache 
+    model.config.use_cache = False 
+    
+    print("loading calibration data")
+    dataloader, _ = get_loaders("wikitext2", nsamples=args.nsamples, seed=args.seed, 
+                               seqlen=args.seqlen, tokenizer=tokenizer)
+    print("dataset loading complete")
+    
+    with torch.no_grad():
+        inps, outs, attention_mask, position_ids = prepare_calibration_input(
+            model, dataloader, device, args.seqlen
+        )
+    
+    layers = model.model.layers
+
+    layer = layers[layer_index]
+    current_ratio = ratio
+    
+    subset = {}
+    subset.update({'self_attn.o_proj': find_layers(layer)['self_attn.o_proj']})
+    subset.update({'mlp.down_proj': find_layers(layer)['mlp.down_proj']})
+
+    if f"model.layers.{layer_index}" in getattr(model, 'hf_device_map', {}):
+        dev = model.hf_device_map[f"model.layers.{layer_index}"]
+        inps, outs, attention_mask, position_ids = inps.to(dev), outs.to(dev), attention_mask.to(dev), position_ids.to(dev)
+
+    wrapped_layers = {}
+    for name in subset:
+        wrapped_layers[name] = BiasGPT(subset[name], args.metrics)
+
+    def add_batch(name):
+        def tmp(_, inp, out):
+            wrapped_layers[name].add_batch(inp[0].data, out.data)
+        return tmp
+
+    handles = []
+    for name in wrapped_layers:
+        handles.append(subset[name].register_forward_hook(add_batch(name)))
+    
+    for j in range(args.nsamples):
+        with torch.no_grad():
+            outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask, position_ids=position_ids)[0]
+    
+    for h in handles:
+        h.remove()
+
+    # Calculate metrics for current layer
+    attn_metric = None
+    mlp_metric = None
+    attn_baseline_inp = None
+    mlp_baseline_inp = None
+
+    for name in subset:
+        if name == 'self_attn.o_proj':
+            W_metric = metrics[args.metrics](wrapped_layers, subset, name) ** 2
+            attn_metric = W_metric.cpu()
+            attn_baseline_inp = wrapped_layers[name].baseline_inp.type(torch.bfloat16)
+        else:
+            W_metric = metrics[args.metrics](wrapped_layers, subset, name)
+            mlp_metric = W_metric.cpu()
+            mlp_baseline_inp = wrapped_layers[name].baseline_inp.type(torch.bfloat16)
+        wrapped_layers[name].free()
+
+    # Standardize metrics for current layer
+    standarlization = lambda x: (x - torch.mean(x)) / torch.std(x)
+    
+    attn_metric = standarlization(attn_metric)
+    attn_metric = attn_metric.reshape(-1, 128).mean(dim=1)
+    mlp_metric = standarlization(mlp_metric)
+
+    # Calculate threshold and masks for current layer
+    prune_metric = torch.cat([attn_metric.view(-1), mlp_metric.view(-1)])
+    sorted_prune, indices = torch.sort(prune_metric, descending=True)
+    compression_weight = torch.ones_like(indices)
+    compression_weight[indices < attn_metric.numel()] = 512.0 / 3
+    threshold = sorted_prune[torch.argmin(torch.abs(torch.cumsum(compression_weight, 0) - torch.sum(compression_weight)*current_ratio))]
+    
+    current_attn_mask = (attn_metric > threshold)
+    current_mlp_mask = (mlp_metric > threshold)
+
+    # Compress current layer immediately
+    if f"model.layers.{layer_index}" in getattr(model, 'hf_device_map', {}):
+        dev = model.hf_device_map[f"model.layers.{layer_index}"]
+        compress(layer, current_attn_mask, None, attn_baseline_inp, None, dev, unstr=args.unstr)
+        compress(layer, None, current_mlp_mask, None, mlp_baseline_inp, dev, unstr=args.unstr)
+    else:
+        compress(layer, current_attn_mask, None, attn_baseline_inp, None, device, unstr=args.unstr)
+        compress(layer, None, current_mlp_mask, None, mlp_baseline_inp, device, unstr=args.unstr)
+
+    # Update inputs for next layer
+    for j in range(args.nsamples):
+        with torch.no_grad():
+            outs[j] = layer(inps[j].unsqueeze(0), attention_mask=attention_mask, position_ids=position_ids)[0]
+    inps, outs = outs, inps
+    torch.cuda.empty_cache()
+
+    model.config.use_cache = use_cache
+    torch.cuda.empty_cache()

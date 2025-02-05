@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from FLAP.lib.prune import prune_with_predefined_ratio, check_sparsity
+from FLAP.lib.prune import prune_with_predefined_ratio, check_sparsity, prune_per_layer
 from FLAP.lib.eval import eval_ppl
 from FLAP.lib.data import get_loaders
 import numpy as np
@@ -50,17 +50,23 @@ class LLMPruningEnv:
         # 计算原始模型大小
         self.org_param_size = sum(p.numel() for p in model.parameters())
         print(f'=> Original model size: {self.org_param_size/1e9:.2f}B parameters')
+        self.llm_org_param_size = sum(p.numel() for p in self.model.language_model.model.parameters())
+        print(f'=> Original LLM model size: {self.llm_org_param_size/1e9:.2f}B parameters')
         
         # 添加新的属性来跟踪总体计算量
-        self.expected_preserve_computation = self.org_param_size * self.preserve_ratio
-        print(f'=> Expected preserve computation: {self.expected_preserve_computation/1e9:.2f}B parameters')
+        self.expected_preserve_computation = self.llm_org_param_size * self.preserve_ratio
+        print(f'=> Expected preserve parameters: {self.expected_preserve_computation/1e9:.2f}B parameters')
         
         # 为每一层计算参数量
         self.layer_params = []
         for layer in self.model.language_model.model.layers:
             attn_params = sum(p.numel() for p in layer.self_attn.parameters())
             mlp_params = sum(p.numel() for p in layer.mlp.parameters())
-            self.layer_params.append(attn_params + mlp_params)
+            input_layer_norm_params = sum(p.numel() for p in layer.input_layernorm.parameters())
+            post_attention_layernorm_params = sum(p.numel() for p in layer.post_attention_layernorm.parameters())
+            self.layer_params.append(attn_params + mlp_params + input_layer_norm_params + post_attention_layernorm_params)
+        
+        self.org_layer_params = copy.deepcopy(self.layer_params)
         
         # 设置LIBERO评估配置
         self.eval_config = GenerateConfig(
@@ -117,9 +123,12 @@ class LLMPruningEnv:
             fmax = max(layer_embedding[:, i])
             if fmax - fmin > 0:
                 layer_embedding[:, i] = (layer_embedding[:, i] - fmin) / (fmax - fmin)
+            else:
+                layer_embedding[:, i] = 1.0
                 
         self.layer_embedding = layer_embedding
         print(f'=> State embedding shape: {self.layer_embedding.shape}')
+        print(self.layer_embedding)
 
     def _action_wall(self, action, current_layer_idx):
         """控制动作以确保满足总体保留率要求
@@ -131,9 +140,13 @@ class LLMPruningEnv:
         Returns:
             float: 调整后的动作值
         """
+        if current_layer_idx == 0 or current_layer_idx == 1:
+            action = 1.0
+            return action
+        
         action = float(action)
         action = np.clip(action, self.lbound, self.rbound)
-        
+        max_pruning_params = self.llm_org_param_size - self.expected_preserve_computation
         # 计算其他层的参数量
         other_params = 0
         this_layer_params = self.layer_params[current_layer_idx]
@@ -145,14 +158,20 @@ class LLMPruningEnv:
         # 计算剩余未处理层的参数量（假设全部保留）
         for i in range(current_layer_idx + 1, len(self.layer_params)):
             other_params += self.layer_params[i]
-            
+
+        current_pruning_params = sum(self.org_layer_params) - other_params - this_layer_params
         # 计算当前层最大可保留的比例
-        max_preserve_ratio = (self.expected_preserve_computation - other_params) / this_layer_params
+        max_pruning_ratio = (max_pruning_params - current_pruning_params) / this_layer_params
         
+        # print('current pruning params: ', current_pruning_params, 'max pruning params: ', max_pruning_params, 'current_layer_idx: ', current_layer_idx, 'max_pruning_ratio: ', max_pruning_ratio, 'other_params: ' , this_layer_params)
+
         # 确保动作值不会导致总体保留率超过目标
-        action = np.minimum(action, max_preserve_ratio)
+        action = np.maximum(action, 1 - max_pruning_ratio)
         # 确保不低于最小保留率
+        action = np.minimum(action, self.rbound)
         action = np.maximum(action, self.lbound)
+
+        
         
         return action
 
@@ -160,6 +179,7 @@ class LLMPruningEnv:
         """执行一个剪枝动作并返回新的状态、奖励和是否完成"""
         # 使用 action_wall 调整动作值
         action = self._action_wall(action, len(self.strategy))
+        # print('step action: ', action)
         
         # 更新当前层的策略
         self.strategy.append(float(action))
@@ -168,9 +188,18 @@ class LLMPruningEnv:
         layer_idx = len(self.strategy) - 1
         
         # 更新状态嵌入
-        self.layer_embedding[layer_idx, 3] = sum(self.strategy) / len(self.strategy)  # 当前已减少的参数比例
-        self.layer_embedding[layer_idx, 4] = 1.0 - (sum(self.strategy) / len(self.strategy))  # 剩余可减少的参数比例
-        self.layer_embedding[layer_idx, 5] = float(action)  # 当前动作
+        self.layer_embedding[layer_idx, 3] = 1.0 - (sum(self.strategy) / len(self.strategy))  # 当前已减少的参数比例
+        self.layer_embedding[layer_idx, 4] = (sum(self.strategy) / len(self.strategy)) - self.preserve_ratio  # 剩余可减少的参数比例
+        self.layer_embedding[layer_idx, 5] = self.strategy[-1]
+        # # 对当前层进行剪枝
+        # prune_per_layer(
+        #     self.args,
+        #     self.pruned_model.language_model,
+        #     self.tokenizer,
+        #     layer_idx,
+        #     float(action),
+        #     self.device
+        # )
         
         # 判断是否完成所有层的剪枝
         done = len(self.strategy) == self.num_layers
@@ -189,10 +218,10 @@ class LLMPruningEnv:
                 self.strategy,
                 self.device
             )
-            #self.pruned_model.language_model.save_pretrained('results/pruned_model')
+            self.pruned_model.language_model.save_pretrained('results/pruned_model')
             # print(self.pruned_model.language_model)
-            #tokenizer = AutoTokenizer.from_pretrained('openvla/openvla-7b-finetuned-libero-spatial', trust_remote_code=True)
-            #tokenizer.save_pretrained('results/pruned_tokenizer')
+            tokenizer = AutoTokenizer.from_pretrained('openvla/openvla-7b-finetuned-libero-spatial', trust_remote_code=True)
+            tokenizer.save_pretrained('results/pruned_tokenizer')
 
             # calculate the number of parameters
             num_params = sum(p.numel() for p in self.pruned_model.parameters())
@@ -204,7 +233,10 @@ class LLMPruningEnv:
             # 评估剪枝后的性能
             # print('start to evaluate model')
             # print(self.eval_config)
-            current_success_rate = self._evaluate_model(self.pruned_model)
+            if (1 - (num_params / self.org_param_size)) > 0.3:
+                current_success_rate = 0.0
+            else:  
+                current_success_rate = self._evaluate_model(self.pruned_model)
             print('evaluate model done')
             current_pruning_ratio = 1 - float(num_params / self.org_param_size)
             # 计算奖励
@@ -257,12 +289,12 @@ class LLMPruningEnv:
             self.flap_preserve_ratios = self.initialize_with_flap()
             self.flap_init_done = True
             # 将FLAP的结果作为初始最佳策略
-            self.best_strategy = self.flap_preserve_ratios
-            # 评估FLAP策略的效果
-            for ratio in self.flap_preserve_ratios:
-                _, reward, _, info = self.step(ratio)
-            self.best_reward = reward
-            print(f"=> Initial FLAP strategy reward: {reward:.4f}")
+            # self.best_strategy = self.flap_preserve_ratios
+            # # 评估FLAP策略的效果
+            # for ratio in self.flap_preserve_ratios:
+            #     _, reward, _, info = self.step(ratio)
+            # self.best_reward = reward
+            # print(f"=> Initial FLAP strategy reward: {reward:.4f}")
             # 重置环境以开始RL训练
             return self.reset()
         
@@ -304,7 +336,7 @@ class LLMPruningEnv:
             reward: 奖励值
         """
 
-        beta = 0.5  # 超参数，可以调整压缩率的权重
+        beta = 1.5  # 超参数，可以调整压缩率的权重
         # 总奖励 = 成功率比例 + beta * 压缩率
         reward = current_success_rate + beta * compress_ratio
         

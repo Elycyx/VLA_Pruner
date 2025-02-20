@@ -23,7 +23,7 @@ def parse_args():
                        help='Directory to cache model weights')
     parser.add_argument('--preserve_ratio', type=float, default=0.5,
                        help='Target ratio to preserve weights')
-    parser.add_argument('--lbound', default=0.5, type=float, help='minimum preserve ratio')
+    parser.add_argument('--lbound', default=0.7, type=float, help='minimum preserve ratio')
     parser.add_argument('--rbound', default=1., type=float, help='maximum preserve ratio')
     parser.add_argument('--metrics', type=str, default="WIFV", choices=["IFV", "WIFV", "WIFN"])
     parser.add_argument('--nsamples', type=int, default=128, help='Number of calibration samples')
@@ -169,6 +169,19 @@ def train_and_prune(agent, env, num_episode, output_dir):
                 if episode > args.warmup:
                     agent.update_policy()
 
+            # 如果发现新的最佳策略，保存模型
+            if final_reward > env.best_reward:
+                print(f"=> Saving best model with reward: {final_reward:.4f}")
+                agent.save_model(os.path.join(output_dir, 'best_model'))
+                # 保存额外的训练信息
+                torch.save({
+                    'episode': episode,
+                    'best_reward': final_reward,
+                    'best_strategy': env.best_strategy,
+                    'success_rate': info['success_rate'],
+                    'compress_ratio': info['compress_ratio']
+                }, os.path.join(output_dir, 'best_model', 'training_info.pth'))
+
             # 重置环境
             observation = None
             episode_steps = 0
@@ -192,6 +205,10 @@ def train_and_prune(agent, env, num_episode, output_dir):
     
     text_writer.close()
     tfwriter.close()
+    
+    # 训练结束后，也保存最终的模型
+    print("=> Saving final model")
+    agent.save_model(os.path.join(output_dir, 'final_model'))
     
     # 使用最佳策略进行最终剪枝
     print("=> Using best strategy for final pruning:", env.best_strategy)

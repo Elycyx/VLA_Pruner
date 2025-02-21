@@ -23,7 +23,7 @@ def parse_args():
                        help='Directory to cache model weights')
     parser.add_argument('--preserve_ratio', type=float, default=0.5,
                        help='Target ratio to preserve weights')
-    parser.add_argument('--lbound', default=0.7, type=float, help='minimum preserve ratio')
+    parser.add_argument('--lbound', default=0.5, type=float, help='minimum preserve ratio')
     parser.add_argument('--rbound', default=1., type=float, help='maximum preserve ratio')
     parser.add_argument('--metrics', type=str, default="WIFV", choices=["IFV", "WIFV", "WIFN"])
     parser.add_argument('--nsamples', type=int, default=128, help='Number of calibration samples')
@@ -172,7 +172,9 @@ def train_and_prune(agent, env, num_episode, output_dir):
             # 如果发现新的最佳策略，保存模型
             if final_reward > env.best_reward:
                 print(f"=> Saving best model with reward: {final_reward:.4f}")
-                agent.save_model(os.path.join(output_dir, 'best_model'))
+                best_model_dir = os.path.join(output_dir, 'best_model')
+                os.makedirs(best_model_dir, exist_ok=True)  # 创建best_model目录
+                agent.save_model(best_model_dir)
                 # 保存额外的训练信息
                 torch.save({
                     'episode': episode,
@@ -180,7 +182,7 @@ def train_and_prune(agent, env, num_episode, output_dir):
                     'best_strategy': env.best_strategy,
                     'success_rate': info['success_rate'],
                     'compress_ratio': info['compress_ratio']
-                }, os.path.join(output_dir, 'best_model', 'training_info.pth'))
+                }, os.path.join(best_model_dir, 'training_info.pth'))
 
             # 重置环境
             observation = None
@@ -208,7 +210,9 @@ def train_and_prune(agent, env, num_episode, output_dir):
     
     # 训练结束后，也保存最终的模型
     print("=> Saving final model")
-    agent.save_model(os.path.join(output_dir, 'final_model'))
+    final_model_dir = os.path.join(output_dir, 'final_model')
+    os.makedirs(final_model_dir, exist_ok=True)  # 创建final_model目录
+    agent.save_model(final_model_dir)
     
     # 使用最佳策略进行最终剪枝
     print("=> Using best strategy for final pruning:", env.best_strategy)
@@ -218,6 +222,7 @@ def train_and_prune(agent, env, num_episode, output_dir):
     
     print(env.model)
     # 保存剪枝后的模型
+    os.makedirs(output_dir, exist_ok=True)  # 确保输出目录存在
     env.model.save_pretrained(output_dir)
     env.tokenizer.save_pretrained(output_dir)
      # 获取并保存新的配置

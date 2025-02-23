@@ -336,7 +336,7 @@ class LLMPruningEnv:
             reward: 奖励值
         """
 
-        beta = 1.5  # 超参数，可以调整压缩率的权重
+        beta = 3.0  # 超参数，可以调整压缩率的权重
         # 总奖励 = 成功率比例 + beta * 压缩率
         reward = current_success_rate + beta * compress_ratio
         
